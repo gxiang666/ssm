@@ -9,8 +9,8 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement			//允许事物
 @SpringBootApplication
-@MapperScan("com.demos.mapper")			
-@ServletComponentScan					
+@MapperScan("com.demos.mapper")			//自动扫描com.demos.mapper下得接口进行代理
+@ServletComponentScan					//支持web注解，会自动扫描注解
 public class Application extends SpringBootServletInitializer{
 	@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
