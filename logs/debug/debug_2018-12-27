@@ -1,0 +1,17 @@
+2018-12-27 16:15:52,014 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-12-27 16:16:03,146 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2018-12-27 16:16:10,085 [http-nio-9090-exec-3] com.demos.web.LoginController:60-login............
+2018-12-27 16:16:11,194 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-27 16:16:11,213 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: wqeq(String), 0(Integer), 1(Integer)
+2018-12-27 16:16:11,298 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 0
+2018-12-27 16:16:19,863 [http-nio-9090-exec-1] com.demos.web.LoginController:60-login............
+2018-12-27 16:16:19,863 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-27 16:16:19,864 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2018-12-27 16:16:19,867 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-27 16:16:19,877 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2018-12-27 16:16:19,880 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-27 16:16:19,880 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-27 16:16:19,883 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-27 16:16:19,884 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-27 16:16:19,885 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-27 16:16:19,888 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 10

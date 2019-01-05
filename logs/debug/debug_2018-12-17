@@ -1,0 +1,283 @@
+2018-12-17 09:25:06,600 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-12-17 09:25:58,345 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2018-12-17 09:26:08,249 [http-nio-9090-exec-3] com.demos.web.LoginController:60-login............
+2018-12-17 09:26:09,219 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-17 09:26:09,239 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2018-12-17 09:26:09,328 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 09:26:09,352 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2018-12-17 09:26:09,361 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 09:26:09,362 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 09:26:09,365 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 09:26:09,366 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 09:26:09,367 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 09:26:09,371 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 10:23:21,648 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-12-17 10:23:54,446 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2018-12-17 10:24:04,792 [http-nio-9090-exec-3] com.demos.web.LoginController:60-login............
+2018-12-17 10:24:05,290 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-17 10:24:05,315 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: sa(String), 0(Integer), 1(Integer)
+2018-12-17 10:24:05,330 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 0
+2018-12-17 10:25:03,849 [http-nio-9090-exec-9] com.demos.web.LoginController:60-login............
+2018-12-17 10:25:12,800 [http-nio-9090-exec-2] com.demos.web.LoginController:60-login............
+2018-12-17 10:25:26,018 [http-nio-9090-exec-10] com.demos.web.LoginController:60-login............
+2018-12-17 10:25:53,961 [http-nio-9090-exec-5] com.demos.web.LoginController:60-login............
+2018-12-17 10:28:01,084 [http-nio-9090-exec-3] com.demos.web.LoginController:60-login............
+2018-12-17 10:28:01,088 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-17 10:28:01,089 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2018-12-17 10:28:01,094 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 10:28:01,106 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2018-12-17 10:28:01,111 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 10:28:01,112 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 10:28:01,114 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 10:28:01,115 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 10:28:01,116 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 10:28:01,119 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 10:31:45,916 [http-nio-9090-exec-8] com.demos.web.UserController:28-into list
+2018-12-17 10:31:45,920 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 10:31:45,921 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 10:31:45,922 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 10:31:45,923 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 10:31:45,923 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 10:31:45,926 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 11:45:28,276 [http-nio-9090-exec-2] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2018-12-17 11:45:33,870 [http-nio-9090-exec-2] com.demos.web.LoginController:60-login............
+2018-12-17 11:45:33,891 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-17 11:45:33,892 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2018-12-17 11:45:33,893 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 11:45:33,900 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2018-12-17 11:45:33,901 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 11:45:33,902 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 11:45:33,903 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 11:45:33,904 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 11:45:33,904 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 11:45:33,906 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 11:47:12,767 [http-nio-9090-exec-9] com.demos.web.UserController:28-into list
+2018-12-17 11:47:12,772 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 11:47:12,772 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 11:47:12,774 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 11:47:12,775 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 11:47:12,775 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 11:47:12,777 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 13:16:43,418 [http-nio-9090-exec-7] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2018-12-17 13:16:49,181 [http-nio-9090-exec-7] com.demos.web.LoginController:60-login............
+2018-12-17 13:16:49,232 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-17 13:16:49,233 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2018-12-17 13:16:49,235 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 13:16:49,240 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2018-12-17 13:16:49,241 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 13:16:49,241 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 13:16:49,242 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 13:16:49,243 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 13:16:49,244 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 13:16:49,246 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 13:17:03,016 [http-nio-9090-exec-8] com.demos.web.UserController:28-into list
+2018-12-17 13:17:03,017 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 13:17:03,017 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 13:17:03,020 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 13:17:03,022 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 13:17:03,022 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2018-12-17 13:17:03,026 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 14:20:18,166 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2018-12-17 14:20:22,837 [http-nio-9090-exec-3] com.demos.web.LoginController:60-login............
+2018-12-17 14:20:22,856 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-17 14:20:22,857 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2018-12-17 14:20:22,859 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 14:20:22,866 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2018-12-17 14:20:22,866 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:20:22,867 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:20:22,868 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:20:22,869 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:20:22,869 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:20:22,871 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:32:39,199 [http-nio-9090-exec-6] com.demos.web.UserController:28-into list
+2018-12-17 14:32:39,202 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:32:39,203 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:32:39,204 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:32:39,205 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:32:39,205 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2018-12-17 14:32:39,207 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 14:32:41,279 [http-nio-9090-exec-5] com.demos.web.UserController:28-into list
+2018-12-17 14:32:41,279 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:32:41,280 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:32:41,281 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:32:41,281 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:32:41,282 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:32:41,283 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:45:08,913 [http-nio-9090-exec-8] com.demos.web.UserController:28-into list
+2018-12-17 14:45:08,917 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:45:08,917 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:45:08,919 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:45:08,920 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:45:08,921 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:45:08,924 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:45:17,784 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2018-12-17 14:45:17,785 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:45:17,786 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:45:17,787 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:45:17,789 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:45:17,790 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:45:17,792 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:45:55,955 [http-nio-9090-exec-9] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:45:56,070 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:45:56,086 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, adsad(String), asdasd(String), 22(Integer)
+2018-12-17 14:45:56,185 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:45:56,255 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2018-12-17 14:45:56,257 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:45:56,257 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:45:56,259 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:45:56,261 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:45:56,262 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:45:56,266 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:46:03,990 [http-nio-9090-exec-10] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:46:03,992 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:46:03,992 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, fdfsf(String), gdsgs(String), 34(Integer)
+2018-12-17 14:46:03,996 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:46:04,039 [http-nio-9090-exec-6] com.demos.web.UserController:28-into list
+2018-12-17 14:46:04,039 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:46:04,040 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:46:04,041 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:46:04,042 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:46:04,042 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:46:04,044 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:46:14,036 [http-nio-9090-exec-3] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:46:14,038 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:46:14,038 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, retgfdg(String), asdsad(String), 756(Integer)
+2018-12-17 14:46:14,041 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:46:14,096 [http-nio-9090-exec-9] com.demos.web.UserController:28-into list
+2018-12-17 14:46:14,097 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:46:14,097 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:46:14,098 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:46:14,099 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:46:14,099 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:46:14,102 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:46:22,037 [http-nio-9090-exec-8] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:46:22,039 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:46:22,039 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, dsfdsf(String), hfdh(String), 75(Integer)
+2018-12-17 14:46:22,061 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:46:22,112 [http-nio-9090-exec-10] com.demos.web.UserController:28-into list
+2018-12-17 14:46:22,113 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:46:22,113 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:46:22,115 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:46:22,116 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:46:22,116 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:46:22,118 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:46:30,398 [http-nio-9090-exec-5] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:46:30,399 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:46:30,400 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, rtyur(String), rty(String), 645(Integer)
+2018-12-17 14:46:30,403 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:46:30,439 [http-nio-9090-exec-3] com.demos.web.UserController:28-into list
+2018-12-17 14:46:30,440 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:46:30,440 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:46:30,442 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:46:30,442 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:46:30,442 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:46:30,444 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:46:33,836 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2018-12-17 14:46:33,837 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:46:33,837 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:46:33,839 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:46:33,839 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:46:33,840 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2018-12-17 14:46:33,841 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 6
+2018-12-17 14:46:48,275 [http-nio-9090-exec-2] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:46:48,277 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:46:48,278 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, qweasdsa(String), rewr(String), 34(Integer)
+2018-12-17 14:46:48,281 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:46:48,338 [http-nio-9090-exec-1] com.demos.web.UserController:28-into list
+2018-12-17 14:46:48,338 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:46:48,338 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:46:48,340 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:46:48,340 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:46:48,341 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:46:48,342 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:46:56,327 [http-nio-9090-exec-9] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:46:56,328 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:46:56,329 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, tdrt(String), rdyhg(String), 534(Integer)
+2018-12-17 14:46:56,332 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:46:56,378 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2018-12-17 14:46:56,379 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:46:56,380 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:46:56,381 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:46:56,382 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:46:56,382 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:46:56,384 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:47:03,509 [http-nio-9090-exec-6] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:47:03,510 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:47:03,511 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, dfs(String), sdf(String), 45(Integer)
+2018-12-17 14:47:03,513 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:47:03,553 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2018-12-17 14:47:03,553 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:47:03,553 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:47:03,555 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:47:03,555 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:47:03,555 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:47:03,558 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:47:13,816 [http-nio-9090-exec-9] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:47:13,817 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:47:13,817 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, dfsdgfd(String), dfgfgc(String), 23(Integer)
+2018-12-17 14:47:13,820 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:47:13,940 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2018-12-17 14:47:13,940 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:47:13,941 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:47:13,942 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:47:13,942 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:47:13,943 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:47:13,944 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:47:27,775 [http-nio-9090-exec-6] com.demos.web.UserController:52-into addOrUpdate
+2018-12-17 14:47:27,776 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2018-12-17 14:47:27,776 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, gfhfg(String), hfgh(String), 44(Integer)
+2018-12-17 14:47:27,779 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2018-12-17 14:47:27,836 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2018-12-17 14:47:27,836 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:47:27,837 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:47:27,838 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:47:27,838 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:47:27,839 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:47:27,841 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 14:47:52,170 [http-nio-9090-exec-9] com.demos.web.UserController:28-into list
+2018-12-17 14:47:52,170 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:47:52,171 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:47:52,172 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:47:52,173 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:47:52,173 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==> Parameters: 20(Integer), 10(Integer)
+2018-12-17 14:47:52,174 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 14:47:54,381 [http-nio-9090-exec-8] com.demos.web.UserController:28-into list
+2018-12-17 14:47:54,382 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 14:47:54,383 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 14:47:54,384 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 14:47:54,385 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 14:47:54,385 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 14:47:54,387 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 15:38:03,303 [http-nio-9090-exec-5] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2018-12-17 15:38:12,184 [http-nio-9090-exec-5] com.demos.web.LoginController:60-login............
+2018-12-17 15:38:12,276 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2018-12-17 15:38:12,278 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2018-12-17 15:38:12,280 [http-nio-9090-exec-5] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 15:38:12,300 [http-nio-9090-exec-3] com.demos.web.UserController:28-into list
+2018-12-17 15:38:12,301 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 15:38:12,302 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 15:38:12,304 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 15:38:12,305 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 15:38:12,305 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 15:38:12,307 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 15:38:18,907 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2018-12-17 15:38:18,908 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 15:38:18,908 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 15:38:18,909 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 15:38:18,910 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 15:38:18,910 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2018-12-17 15:38:18,912 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2018-12-17 15:38:21,083 [http-nio-9090-exec-10] com.demos.web.UserController:28-into list
+2018-12-17 15:38:21,084 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 15:38:21,084 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 15:38:21,086 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 15:38:21,087 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 15:38:21,087 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==> Parameters: 20(Integer), 10(Integer)
+2018-12-17 15:38:21,089 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2018-12-17 15:38:23,532 [http-nio-9090-exec-9] com.demos.web.UserController:28-into list
+2018-12-17 15:38:23,533 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2018-12-17 15:38:23,533 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2018-12-17 15:38:23,534 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2018-12-17 15:38:23,535 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2018-12-17 15:38:23,535 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2018-12-17 15:38:23,537 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-<==      Total: 10
