@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<style>
+		label.error {
+			line-height: 30px;
+			font-size: 14px;
+			color: red;
+		}
+		
+		label.hint {
+			line-height: 30px;
+			font-size: 12px;
+			color: #B0B0B0;
+		}
+	</style>
+<#include "../common/head.html" />
+<body class="no-skin">
+	<#include "../common/navbar.html" />
+	<div class="main-container ace-save-state" id="main-container">
+		<!-- bootstap-ace样式 -->
+		<script type="text/javascript">
+                try{ace.settings.loadState('main-container')}catch(e){}
+        </script>
+        
+        <#include "../common/sidebar.html" />
+        
+		<div class="main-content">
+			<div class="main-content-inner">
+				<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+					<ul class="breadcrumb">
+						<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a></li>
+						<li class="active">菜单管理</li>
+					</ul>
+				</div>
+				<div class="page-content">
+					<div class="page-header">
+						<h1>
+							菜单管理 <small> <i class="ace-icon fa fa-angle-double-right"></i>
+								overview
+							</small> <label style="float: right;">
+								<button class="btn btn-white btn-info btn-bold" id="addBtn">
+									<i class="ace-icon fa fa-floppy-o bigger-120 blue"></i>添加
+								</button>
+							</label>
+						</h1>
+					</div>
+				<div class="row">
+					<div class="col-md-4">
+					<button type="button" class="btn btn-info btn-sm">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true">添加主菜单
+					</button>
+					</div>
+				</div>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>菜单名称</th>
+							<th>父菜单</th>
+							<th>url地址</th>
+							<th>序号</th>
+							<th>是否有效</th>
+							<th>备注</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+		
+		<#include "../common/footer.html" />
+	</div>
+	<#include "../common/script.html" />
+	<script type="text/javascript">
+
+    </script>
+</body>
+</html>
