@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demos.mapper.menuMapper">
+	<resultMap type="com.demos.model.Menu" id="menuResultMap">
+		<id column="id" property="id" jdbcType="INTEGER"/>
+		<result column="name" property="name" javaType="VARCHAR"/>
+		<result column="parent" property="parent" javaType="VARCHAR"/>
+		<result column="index" property="index" javaType="INTEGER"/>
+		<result column="valid" property="valid" javaType="INTEGER"/>
+		<result column="remake" property="remake" javaType="VARCHAR"/>
+	</resultMap>
+	<sql id="base_Colum_List">
+		id, name, parent, index, valid, remake
+	</sql>
+	<select id="list" resultMap="menuResultMap">
+		select 
+		<include refid="base_Colum_List"></include>
+		from menu 
+		where 1=1
+		<if test="menu != null">
+			<if test="menu.id != null and menu.id != 0">
+				and id = #{menu.id}
+			</if>
+			<if test="menu.name != null adn menu.name != ''">
+				and name = #{menu.name}
+			</if>
+			<if test="menu.parent != null and menu.name != ''">
+				and parent = #{menu.parent}
+			</if>
+			<if test="menu.index != null and menu.index != 0">
+				and index = #{menu.index}
+			</if>
+			<if test="menu.valid != null and menu.valid != ''">
+				and valid = #{menu.valid}
+			</if>
+			<if test="menu.remake != null menu.remake != ''">
+				and remake = #{menu.remake}
+			</if>
+		</if>
+		limit #{pageIndex}, #{pageSize}
+	</select>
+	<select id="count" resultType="java.lang.Integer">
+		select count(id) from menu 
+		where 1=1
+		<if test="menu != null">
+			<if test="user,id">
+			</if>
+		</if>
+	</select>
+	<insert id=""></insert>
+	
+</mapper>
