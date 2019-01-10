@@ -1,5 +1,7 @@
 package com.demos.model;
 
+import java.util.List;
+
 /**
  * 菜单表
  * 
@@ -14,6 +16,15 @@ public class Menu {
 	private Integer index;// 菜单序号
 	private Integer valid;// 是否有效
 	private String remake;// 备注
+	private List<Role> roleList;
+
+	public List<Role> getRoleList() {
+		return roleList;
+	}
+
+	public void setRoleList(List<Role> roleList) {
+		this.roleList = roleList;
+	}
 
 	public Integer getId() {
 		return id;
@@ -66,7 +77,7 @@ public class Menu {
 	@Override
 	public String toString() {
 		return "Menu [id=" + id + ", name=" + name + ", parent=" + parent + ", index=" + index + ", valid=" + valid
-				+ ", remake=" + remake + "]";
+				+ ", remake=" + remake + ", roleList=" + roleList + "]";
 	}
 
 }
