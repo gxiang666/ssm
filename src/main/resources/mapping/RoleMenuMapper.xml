@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demos.mapper.RelationMapper">
+
+	<!-- 根据角色id返回菜单列表 -->	
+	<resultMap type="com.demos.model.Menu" id="resultMenuMap">
+		<id column="id" property="id" jdbcType="INTEGER"/>
+		<result column="name" property="name" jdbcType="VARCHAR"/>
+		<result column="parent" property="parent" jdbcType="VARCHAR"/>
+		<result column="index" property="index" jdbcType="INTEGER"/>
+		<result column="valid" property="valid" jdbcType="INTEGER"/>
+		<result column="remake" property="remake" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<select id="listMenu" resultMap="resultMenuMap">
+		select menu.*,rl.rid rlrid from menu,relation rl
+		where rl.rid =#{id} and menu.id = rl.mid
+	</select>
+	
+	<!-- 根据菜单id返回角色列表 -->	
+	<resultMap type="com.demos.model.Role" id="resultRoleMap">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="code" property="code"/>
+		<result column="valid" property="valid"/>
+	</resultMap>
+	
+	<select id="listRole" resultMap="resultMenuMap">
+		select role.*,rl.mid rlmid from role,relation rl
+		where role.id=rl.rid and menu.id=#{id}
+	</select>
+</mapper>

@@ -11,7 +11,7 @@ import java.util.List;
 public class Role {
 
 	private Integer id;// 角色id
-	private String nmae;// 角色名称
+	private String name;// 角色名称
 	private String code;// 角色code
 	private Integer valid;// 是否有效
 	private List<Menu> menuList;
@@ -24,12 +24,12 @@ public class Role {
 		this.id = id;
 	}
 
-	public String getNmae() {
-		return nmae;
+	public String getName() {
+		return name;
 	}
 
-	public void setNmae(String nmae) {
-		this.nmae = nmae;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getCode() {
@@ -58,7 +58,7 @@ public class Role {
 
 	@Override
 	public String toString() {
-		return "Role [id=" + id + ", nmae=" + nmae + ", code=" + code + ", valid=" + valid + ", menuList=" + menuList
+		return "Role [id=" + id + ", name=" + name + ", code=" + code + ", valid=" + valid + ", menuList=" + menuList
 				+ "]";
 	}
 

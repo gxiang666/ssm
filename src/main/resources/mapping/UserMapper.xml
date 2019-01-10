@@ -4,7 +4,8 @@
 	<resultMap id="BaseResultMap" type="com.demos.model.User">
 		<id column="id" property="id" jdbcType="INTEGER" />
 		<result column="name" property="name" jdbcType="VARCHAR" />
-		<result column="password" property="password" jdbcType="VARCHAR" />
+		<result column="password" property="password"
+			jdbcType="VARCHAR" />
 		<result column="age" property="age" jdbcType="INTEGER" />
 	</resultMap>
 	<sql id="Base_Column_List">
@@ -25,32 +26,38 @@
 		</if>
 		limit #{pageIndex},#{pageSize}
 	</select>
-	<select id="count"  resultType="java.lang.Integer">
+	<select id="count" resultType="java.lang.Integer">
 		select count(id) from t_user
 		where 1=1
 		<if test="user != null">
-            <if test="user.id != null  and user.id != 0">
-                and id = #{user.id}
-            </if>
-            <if test="user.name != null and user.name != ''">
-                and name = #{user.name}
-            </if>
-        </if>
+			<if test="user.id != null  and user.id != 0">
+				and id = #{user.id}
+			</if>
+			<if test="user.name != null and user.name != ''">
+				and name = #{user.name}
+			</if>
+		</if>
 	</select>
-	
-	<insert id="insert" parameterType="com.demos.model.User" useGeneratedKeys="true" keyProperty="id">
-		insert into t_user (id, name, password, age )
-		values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},#{age,jdbcType=INTEGER})
+
+	<insert id="insert" parameterType="com.demos.model.User"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into t_user (id, name,
+		password, age )
+		values (#{id,jdbcType=INTEGER},
+		#{name,jdbcType=VARCHAR},
+		#{password,jdbcType=VARCHAR},#{age,jdbcType=INTEGER})
 	</insert>
 	<update id="update" parameterType="com.demos.model.User">
 		update t_user
 		set
-		name = #{name,jdbcType=VARCHAR},
+		name =
+		#{name,jdbcType=VARCHAR},
 		password = #{password,jdbcType=VARCHAR},
-		age = #{age,jdbcType=INTEGER}
+		age =
+		#{age,jdbcType=INTEGER}
 		where id = #{id,jdbcType=INTEGER}
 	</update>
 	<delete id="delete" parameterType="java.lang.Integer">
-	   delete from t_user where id = #{id,jdbcType=INTEGER}
+		delete from t_user where id = #{id,jdbcType=INTEGER}
 	</delete>
 </mapper>

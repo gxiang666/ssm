@@ -1,1 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demos.mapper.RoleMapper">
+	<resultMap type="com.demos.model.Role" id="resultMap">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="code" property="code"/>
+		<result column="valid" property="valid"/>
+		<collection property="menuList" ofType="com.demos.model.Menu" select="com.demos.mapper.RelationMapper.listMenu" column="id">
+		</collection>
+	</resultMap>
+	
+	<select id="list" resultMap="resultMap">
+		select
+			id,name,code,valid
+		from role
+		where 1=1
+		<if test="role != null">
+			<if test="role.id != null and role.id != 0">
+				and role.id = #{role.id}
+			</if>
+			<if test="role.name != null and role.name != ''">
+				and role.name = #{role.name}
+			</if>
+		</if>
+		limit #{pageIndex},#{pageSize}
+	</select>
+	
+</mapper>
