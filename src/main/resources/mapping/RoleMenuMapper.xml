@@ -29,4 +29,14 @@
 		select role.*,rl.mid rlmid from role,relation rl
 		where role.id=rl.rid and menu.id=#{id}
 	</select>
+	
+	<insert id="insert">
+		insert into relation(rid,mid) values
+		<foreach collection="menuIdList" item="menuId" separator=",">
+			(
+				#{rid},#{menuId}
+			)			
+		</foreach>
+	</insert>
+		
 </mapper>

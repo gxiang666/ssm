@@ -9,4 +9,7 @@ import com.demos.model.Role;
 public interface RoleMapper {
 
 	List<Role> list(@Param("role") Role role, @Param("pageIndex") int pageIndex, @Param("pageSize") int pageSize);
+
+	int insertRole(Role role);
+
 }
