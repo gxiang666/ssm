@@ -1,28 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.demos.mapper.MenuMapper">
-	<resultMap type="com.demos.model.Menu" id="resultMap">
-		<id column="id" property="id" jdbcType="INTEGER"/>
-		<result column="name" property="name" jdbcType="VARCHAR"/>
-		<result column="parent" property="parent" jdbcType="VARCHAR"/>
-		<result column="index" property="index" jdbcType="INTEGER"/>
-		<result column="valid" property="valid" jdbcType="INTEGER"/>
-		<result column="remake" property="remake" jdbcType="VARCHAR"/>
-		<collection property="com.demos.model.Role" column="id" select="com.demos.mapper.RelationMapper.listRole"></collection>
+	<resultMap type="Menu" id="resultMap">
+		<id column="id" property="id"/>
+		<result column="index" property="index"/> 
+		<result column="name" property="name"/>
+		<result column="url" property="url"/>
+		<result column="parent" property="parent"/>
+		<result column="remake" property="remake"/>
+		<result column="valid" property="valid"/>
 	</resultMap>
+	
 	<select id="list" resultMap="resultMap">
-		select
-			*
-		from menu
-		where 1=1
-		<if test="menu != null">
-			<if test="menu.id != null and menu.id != ''">
-				and role.id = id
+			select * from menu
+			where 1=1
+			<if test="menu != null">
+				<if test="menu.id != null and menu.id != 0">\
+					id = #{menu.id}
+				</if>
+				<if test="menu.name != null and menu.name != ''">
+					name = #{menu.name}
+				</if>
 			</if>
-			<if test="menu.name != null and menu.name != ''">
-				and menu.name = #{menu.name}
-			</if>
-		</if>
-		limit #{pageIndex},#{pageSize}
+			limit #{pageIndex},#{pageSize}
 	</select>
+	
+	
 </mapper>

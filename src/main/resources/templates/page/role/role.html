@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh">
-	<style>
-		label.error {
-			line-height: 30px;
-			font-size: 14px;
-			color: red;
-		}
-		
-		label.hint {
-			line-height: 30px;
-			font-size: 12px;
-			color: #B0B0B0;
-		}
-	</style>
+<style>
+label.error {
+	line-height: 30px;
+	font-size: 14px;
+	color: red;
+}
+
+label.hint {
+	line-height: 30px;
+	font-size: 12px;
+	color: #B0B0B0;
+}
+</style>
 <#include "../common/head.html" />
 <body class="no-skin">
 	<#include "../common/navbar.html" />
@@ -21,9 +21,9 @@
 		<script type="text/javascript">
                 try{ace.settings.loadState('main-container')}catch(e){}
         </script>
-        
-        <#include "../common/sidebar.html" />
-        
+
+		<#include "../common/sidebar.html" />
+
 		<div class="main-content">
 			<div class="main-content-inner">
 				<div class="breadcrumbs ace-save-state" id="breadcrumbs">
@@ -37,117 +37,225 @@
 						<h1>
 							角色管理 <small> <i class="ace-icon fa fa-angle-double-right"></i>
 								overview
-							</small> <!-- <label style="float: right;">
+							</small>
+							<!-- <label style="float: right;">
 								<button class="btn btn-white btn-info btn-bold" id="addBtn">
 									<i class="ace-icon fa fa-floppy-o bigger-120 blue"></i>添加
 								</button>
 							</label> -->
 						</h1>
 					</div>
-					
+
 					<form class="form-inline">
-						  <div class="form-group">
-						    <label for="exampleInputName2"><h4><strong>角色名称:</strong></h4></label>
-						    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-						  </div>
-						 <div class="form-group">
-						    <label><h4><strong>是否有效：</strong></h4></label>
-						   	<select class="form-control">
-							  <option>1</option>
-							  <option>2</option>
-							  <option>3</option>
-							  <option>4</option>
-							  <option>5</option>
+						<div class="form-group">
+							<label for="exampleInputName2"><h4>
+									<strong>角色名称:</strong>
+								</h4></label> <input type="text" class="form-control" id="exampleInputName2"
+								placeholder="Jane Doe">
+						</div>
+						<div class="form-group">
+							<label><h4>
+									<strong>是否有效：</strong>
+								</h4></label> <select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
 							</select>
-						  </div>
-						  
-					  <button class="btn btn-default">
-					  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
-					  </button>
-					  <button class="btn btn-info" id="roleAddBtn">
-					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加角色
-					  </button>
+						</div>
+
+						<button class="btn btn-default">
+							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询
+						</button>
+						<button class="btn btn-info" id="addBtn">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加角色
+						</button>
 					</form>
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th>角色名称</th>
-								<th>角色code</th>
-								<th>权限列表</th>
-								<th>是否有效</th>
-								<th>操作</th>
-							</tr>
-						</thead>
-						<tbody>
-							<#if (roleList??)&&(roleList?size>0)>
-								<#list roleList as item>
-								<tr id="tr_${item.id?c}">
-									<td>${(item.name)!''}</td>
-									<td>${(item.code)!''}</td>
-									<td>
-										<#list item.menuList as menu>
-											${(menu.name)!''},
-										</#list>
-									</td>
-									<td>${(item.valid)?c}</td>
-								</tr>
-								</#list>
-							</#if>
-						</tbody>
-					</table>
+
+					<div class="row">
+						<div class="col-xs-12">
+							<table id="simple-table"
+								class="table  table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>角色名称</th>
+										<th>角色code</th>
+										<th>权限列表</th>
+										<th>是否有效</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- 判断userList不为空，且大小大于0 -->
+									<#if (roleList??)&&(roleList?size>0)> <#list roleList as
+										item>
+									<tr id="tr_${(item.id)?c}">
+										<td>${(item.name)!''}</td>
+										<td>${(item.code)!''}</td>
+										<td><#list item.menuList as menu>
+											${(menu.name)!''}, </#list></td>
+										<td>${(item.valid)?c}</td>
+										<td>
+											<!-- 修改和删除 -->
+											<button class="btn btn-white btn-info btn-bold"
+												onclick="update(${(item.id)?c})">
+												<i class="ace-icon fa fa-pencil-square-o bigger-120 blue"></i>修改
+											</button>
+											<button class="btn btn-white btn-warning btn-bold"
+												onclick="deleteUser(${(item.id)?c})">
+												<i class="ace-icon fa fa-trash-o bigger-120 orange"></i>删除
+											</button>
+
+										</td>
+									</tr>
+									</#list> </#if>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
-			</div>			
+			</div>
+			<#include "../common/footer.html" />
+			<!-- 添加 -->
+			<div id="dialog-add" class="hide">
+				<form action="${(ctx)!''}/roel/addOrUpdate" method="post"
+					id="addForm">
+					<input type="hidden" name="id" id="add_id" />
+					<p>
+						<label>角色名称：</label><input type="text" name="name"
+							style="width: 70%;" class='a' id="add_name" />
+					</p>
+					<p>
+						<label>角色code：</label><input type="text" name="code"
+							style="width: 70%;" id="add_code" />
+					</p>
+					<p>
+						<label>是否有效：</label><input type="text" name="valid"
+							style="width: 70%;" id="add_valid" />
+					</p>
+				</form>
+			</div>
 		</div>
-		<#include "../common/footer.html" />
-		<!-- 添加 -->
-		<div id="dialog-add" class="hide">
-			<form action="${(ctx)!''}/user/addOrUpdate" method="post" id="addForm" >
-				<input type="hidden" name="id" id="add_id" />
-				<p>
-					<label>姓名：</label><input type="text" name="name" style="width: 70%;" class='a'
-						id="add_name" />
-				</p>
-				<p>
-					<label>密码：</label><input type="text" name="password"
-						style="width: 70%;" id="add_password" />
-				</p>
-				<p>
-					<label>年龄：</label><input type="text" name="age" style="width: 70%;"
-						id="add_age" />
-				</p>
-			</form>
-		</div>
-	</div>
-	<#include "../common/script.html" />
-	
-	<script type="text/javascript">
-	//创建添加修改dialog，窗口
-    function createDialog(title){
-        var dialog = $( "#dialog-add" ).removeClass('hide').dialog({
-            modal: true,
-            width:400,
-            height:300,
-            title: "<div class='widget-header widget-header-small'><h4 class='smaller'><i class='ace-icon fa fa-check'></i> "+title+"</h4></div>",
-            title_html: true,
-            buttons: [ 
-                {
-                    text: "Cancel",
-                    "class" : "btn btn-minier",
-                    click: function() {
-                        $( this ).dialog( "close" ); 
-                        resetAddForm();
-                    } 
-                },
-                {
-                    text: "OK",
-                    "class" : "btn btn-primary btn-minier",
-                    click: function() {
-                         $("#addForm").submit();
-                    } 
-                }
-            ]
-        });
-    }
+		<#include "../common/script.html" />
+
+		<script type="text/javascript">
+
+	    jQuery(function($) {
+	       $(".nav-list").children("li").attr("class","");
+	        $(".nav-list").children("li").eq(2).attr("class","active");
+	      
+	       /*  $("#queryBtn").bind("click",function(){
+	            $("#pageIndex").val(1);
+	            $("#queryForm").submit();
+	        }); */
+	        
+	        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+	            _title: function(title) {
+	                var $title = this.options.title || '&nbsp;'
+	                if( ("title_html" in this.options) && this.options.title_html == true )
+	                    title.html($title);
+	                else title.text($title);
+	            }
+	        }));
+	        $( "#addBtn" ).on('click', function(e) {
+	        	resetAddForm();
+	            e.preventDefault();
+	            $("#add_id").val("");
+	            createDialog("添加用户")
+	        });
+	        //表单验证 required:true表示是必须的
+	       //digits:true表示必须是数字
+	        $("#addForm").validate({
+	            onkeyup:null,
+	            rules:{
+	            	name:{
+	                    required:true
+	                },
+	                code:{
+	                    required:true
+	                },
+	                valid:{
+	                    required:true,
+	                    digits:true			
+	                }
+	            },
+	            messages:{
+	            	name:{
+	                    required:"请输入 角色名称"
+	                },
+	                code:{
+	                	 required:"请输入角色code"
+	                },
+	                valid:{
+	                    required:"请输入是否有效,0为无效，1为有效",
+	                    digits:"必须是整数"
+	                }
+	            }
+	        });
+	    })
+	    
+	    
+	    
+	    function update(id){
+	    	$("#add_id").val(id);
+	    	$("#add_name").val($.trim($("#tr_"+id).children("td").eq(1).text()));
+	    	$("#add_code").val($.trim($("#tr_"+id).children("td").eq(2).text()));
+	    	$("#add_valid").val($.trim($("#tr_"+id).children("td").eq(3).text()));
+	    	createDialog("修改用户");
+	    }
+	    //创建添加修改dialog，窗口
+	    function createDialog(title){
+	        var dialog = $( "#dialog-add" ).removeClass('hide').dialog({
+	            modal: true,
+	            width:400,
+	            height:300,
+	            title: "<div class='widget-header widget-header-small'><h4 class='smaller'><i class='ace-icon fa fa-check'></i> "+title+"</h4></div>",
+	            title_html: true,
+	            buttons: [ 
+	                {
+	                    text: "Cancel",
+	                    "class" : "btn btn-minier",
+	                    click: function() {
+	                        $( this ).dialog( "close" ); 
+	                        resetAddForm();
+	                    } 
+	                },
+	                {
+	                    text: "OK",
+	                    "class" : "btn btn-primary btn-minier",
+	                    click: function() {
+	                         $("#addForm").submit();
+	                    } 
+	                }
+	            ]
+	        });
+	    }
+	    function resetAddForm(){
+	        $("input[id^='add_']").val("");
+	    }
+	    
+	    
+	    
+	    function deleteUser(id){
+	        var r=confirm("确认删除？");
+	        if (r==true){
+	        	$.ajax({
+	              type: "POST",
+	              url: "${(ctx)!''}/role/delete",
+	              data: {"id":id},
+	              cache:false,
+	              success: function(msg){
+	                  if(msg == "success"){
+	                       alert("删除成功！");
+	                       window.location.reload();
+	                  }else{
+	                       alert("删除失败！");
+	                  }
+	              }
+	           });
+	        }
+	    }
     </script>
 </body>
 </html>

@@ -13,6 +13,7 @@ public class Menu {
 	private Integer id;// 菜单id
 	private String name;// 菜单名称
 	private String parent;// 菜单的父菜单
+	private String url;
 	private Integer index;// 菜单序号
 	private Integer valid;// 是否有效
 	private String remake;// 备注
@@ -74,10 +75,18 @@ public class Menu {
 		this.remake = remake;
 	}
 
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
 	@Override
 	public String toString() {
-		return "Menu [id=" + id + ", name=" + name + ", parent=" + parent + ", index=" + index + ", valid=" + valid
-				+ ", remake=" + remake + ", roleList=" + roleList + "]";
+		return "Menu [id=" + id + ", name=" + name + ", parent=" + parent + ", url=" + url + ", index=" + index
+				+ ", valid=" + valid + ", remake=" + remake + ", roleList=" + roleList + "]";
 	}
 
 }

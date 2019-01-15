@@ -13,42 +13,37 @@ import com.demos.model.Role;
 import com.demos.service.IRoleService;
 
 @Controller
+@RequestMapping("/role")
 public class RoleController {
-	
-	/*@Autowired
-	RoleMapper roleMapper;
 
-	@RequestMapping("/role")
-	public String role(Model model) {
-		
-		List<Role> roleList = roleMapper.list(null,0,10);
-		model.addAttribute("roleList", roleList);
-		return "/page/role/role";
-	}
+	/*
+	 * @Autowired RoleMapper roleMapper;
+	 * 
+	 * @RequestMapping("/role") public String role(Model model) {
+	 * 
+	 * List<Role> roleList = roleMapper.list(null,0,10);
+	 * model.addAttribute("roleList", roleList); return "/page/role/role"; }
+	 * 
+	 * @RequestMapping("/role") public String role(Model model) {
+	 * 
+	 * List<Role> roleList = roleMapper.list(null,0,10);
+	 * model.addAttribute("roleList", roleList); return "/page/role/role"; }
+	 * 
+	 * @ResponseBody
+	 * 
+	 * @RequestMapping("/test") public List<Role> test() { List<Role> list =
+	 * roleMapper.list(null,0,10);
+	 * 
+	 * return list; }
+	 */
 
-	@RequestMapping("/role")
-	public String role(Model model) {
-		
-		List<Role> roleList = roleMapper.list(null,0,10);
-		model.addAttribute("roleList", roleList);
-		return "/page/role/role";
-	}
-	
-	@ResponseBody
-	@RequestMapping("/test")
-	public List<Role> test() {
-		List<Role> list = roleMapper.list(null,0,10);
-		
-		return list;
-	}*/
-	
 	@Autowired
 	IRoleService roleService;
 
-	@RequestMapping("/role")
+	@RequestMapping("/list")
 	public String role(Model model) {
-		
-		List<Role> roleList = roleService.list(null,0,10);
+
+		List<Role> roleList = roleService.list(null, 0, 10);
 		model.addAttribute("roleList", roleList);
 		return "/page/role/role";
 	}
@@ -56,23 +51,38 @@ public class RoleController {
 	@ResponseBody
 	@RequestMapping("/test")
 	public List<Role> test() {
-		List<Role> list = roleService.list(null,0,10);
-		
+		List<Role> list = roleService.list(null, 0, 10);
+
 		return list;
 	}
-	
+
 	@RequestMapping("/insertRole")
 	public String saveRole() {
 
-		List<Integer> list = Arrays.asList(1,2,3);
+		List<Integer> list = Arrays.asList(1, 2, 3);
 		Role role = new Role();
 		role.setCode("test");
 		role.setName("test");
 		role.setValid(1);
-		
+
 		roleService.saveRole(role, list);
-		
+
 		return "redirect:/user/list";
 	}
+
 	
+	@ResponseBody
+	@RequestMapping("/delete")
+	public String delete(Integer id) {
+		String result = "fail";
+		try {
+			roleService.delete(id);
+			result = "success";
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return result;
+	}
+
 }

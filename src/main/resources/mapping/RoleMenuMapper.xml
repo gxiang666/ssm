@@ -8,6 +8,7 @@
 		<result column="name" property="name" jdbcType="VARCHAR"/>
 		<result column="parent" property="parent" jdbcType="VARCHAR"/>
 		<result column="index" property="index" jdbcType="INTEGER"/>
+		<result column="url" property="url" jdbcType="VARCHAR"/>
 		<result column="valid" property="valid" jdbcType="INTEGER"/>
 		<result column="remake" property="remake" jdbcType="VARCHAR"/>
 	</resultMap>

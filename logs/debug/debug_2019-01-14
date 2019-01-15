@@ -1,0 +1,311 @@
+2019-01-14 10:27:11,656 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-01-14 10:27:43,197 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2019-01-14 10:27:48,413 [http-nio-9090-exec-3] com.demos.web.LoginController:60-login............
+2019-01-14 10:27:48,944 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2019-01-14 10:27:48,964 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2019-01-14 10:27:48,999 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2019-01-14 10:27:49,015 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2019-01-14 10:27:49,018 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 10:27:49,019 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 10:27:49,028 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 10:27:49,029 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 10:27:49,030 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:27:49,041 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 10:27:52,456 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:27:52,457 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:27:52,467 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:27:52,468 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:27:52,479 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:27:52,479 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:27:52,480 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:27:52,490 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:27:52,491 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:27:56,573 [http-nio-9090-exec-3] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:27:56,573 [http-nio-9090-exec-3] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:27:56,582 [http-nio-9090-exec-3] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:27:56,583 [http-nio-9090-exec-3] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:27:56,594 [http-nio-9090-exec-3] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:27:56,595 [http-nio-9090-exec-3] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:27:56,595 [http-nio-9090-exec-3] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:27:56,605 [http-nio-9090-exec-3] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:27:56,606 [http-nio-9090-exec-3] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:28:22,031 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:28:22,032 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:28:22,086 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:22,087 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:28:22,136 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:28:22,138 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:22,139 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:28:22,155 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:28:22,156 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:28:28,727 [http-nio-9090-exec-7] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:28:28,727 [http-nio-9090-exec-7] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:28:28,737 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:28,737 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:28:28,746 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:28:28,747 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:28,747 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:28:28,757 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:28:28,758 [http-nio-9090-exec-7] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:28:32,501 [http-nio-9090-exec-9] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:28:32,501 [http-nio-9090-exec-9] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:28:32,512 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:32,513 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:28:32,523 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:28:32,525 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:32,525 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:28:32,535 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:28:32,536 [http-nio-9090-exec-9] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:28:33,811 [http-nio-9090-exec-4] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:28:33,811 [http-nio-9090-exec-4] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:28:33,821 [http-nio-9090-exec-4] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:33,821 [http-nio-9090-exec-4] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:28:33,833 [http-nio-9090-exec-4] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:28:33,833 [http-nio-9090-exec-4] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:33,834 [http-nio-9090-exec-4] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:28:33,843 [http-nio-9090-exec-4] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:28:33,844 [http-nio-9090-exec-4] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:28:34,643 [http-nio-9090-exec-2] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:28:34,643 [http-nio-9090-exec-2] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:28:34,654 [http-nio-9090-exec-2] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:34,654 [http-nio-9090-exec-2] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:28:34,663 [http-nio-9090-exec-2] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:28:34,664 [http-nio-9090-exec-2] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:34,664 [http-nio-9090-exec-2] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:28:34,674 [http-nio-9090-exec-2] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:28:34,674 [http-nio-9090-exec-2] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:28:35,714 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:28:35,715 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:28:35,725 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:35,725 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:28:35,735 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:28:35,737 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:28:35,737 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:28:35,745 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:28:35,746 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:30:44,146 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2019-01-14 10:30:44,154 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 10:30:44,155 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 10:30:44,164 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 10:30:44,165 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 10:30:44,165 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:30:44,175 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 10:33:21,926 [http-nio-9090-exec-1] com.demos.web.UserController:28-into list
+2019-01-14 10:33:21,936 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 10:33:21,936 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 10:33:21,981 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 10:33:21,982 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 10:33:21,983 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:21,993 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 10:33:27,600 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2019-01-14 10:33:27,601 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 10:33:27,602 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 10:33:27,610 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 10:33:27,611 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 10:33:27,612 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2019-01-14 10:33:27,622 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 2
+2019-01-14 10:33:30,412 [http-nio-9090-exec-10] com.demos.web.UserController:28-into list
+2019-01-14 10:33:30,413 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 10:33:30,413 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 10:33:30,422 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 10:33:30,423 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 10:33:30,423 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:30,433 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 10:33:41,069 [http-nio-9090-exec-6] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:33:41,069 [http-nio-9090-exec-6] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:41,079 [http-nio-9090-exec-6] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:41,080 [http-nio-9090-exec-6] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:33:41,089 [http-nio-9090-exec-6] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:33:41,090 [http-nio-9090-exec-6] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:41,090 [http-nio-9090-exec-6] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:33:41,100 [http-nio-9090-exec-6] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:33:41,101 [http-nio-9090-exec-6] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:33:44,572 [http-nio-9090-exec-7] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:33:44,572 [http-nio-9090-exec-7] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:44,582 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:44,583 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:33:44,593 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:33:44,593 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:44,594 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:33:44,603 [http-nio-9090-exec-7] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:33:44,603 [http-nio-9090-exec-7] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:33:45,548 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:33:45,548 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:45,558 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:45,559 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:33:45,568 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:33:45,569 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:45,569 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:33:45,579 [http-nio-9090-exec-5] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:33:45,580 [http-nio-9090-exec-5] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:33:46,531 [http-nio-9090-exec-1] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:33:46,532 [http-nio-9090-exec-1] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:46,542 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:46,542 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:33:46,552 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:33:46,552 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:46,553 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:33:46,562 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:33:46,563 [http-nio-9090-exec-1] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:33:48,756 [http-nio-9090-exec-9] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:33:48,757 [http-nio-9090-exec-9] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:48,766 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:48,766 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:33:48,776 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:33:48,776 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:48,777 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:33:48,786 [http-nio-9090-exec-9] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:33:48,786 [http-nio-9090-exec-9] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:33:52,453 [http-nio-9090-exec-10] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 10:33:52,453 [http-nio-9090-exec-10] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:33:52,462 [http-nio-9090-exec-10] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:52,463 [http-nio-9090-exec-10] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 10:33:52,473 [http-nio-9090-exec-10] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 10:33:52,474 [http-nio-9090-exec-10] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 10:33:52,474 [http-nio-9090-exec-10] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 10:33:52,484 [http-nio-9090-exec-10] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 10:33:52,484 [http-nio-9090-exec-10] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 10:43:30,371 [http-nio-9090-exec-9] com.demos.web.UserController:28-into list
+2019-01-14 10:43:49,400 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 10:43:49,400 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 10:43:49,408 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 10:43:49,409 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 10:43:49,409 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 10:43:49,418 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:29:12,284 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-01-14 14:32:33,136 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2019-01-14 14:32:37,594 [http-nio-9090-exec-3] com.demos.web.LoginController:60-login............
+2019-01-14 14:32:37,906 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2019-01-14 14:32:37,952 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2019-01-14 14:32:37,972 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2019-01-14 14:32:37,981 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2019-01-14 14:32:37,984 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:32:37,985 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:32:37,992 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:32:37,994 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:32:37,994 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:32:38,004 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:32:42,346 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2019-01-14 14:32:42,346 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:32:42,347 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:32:42,354 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:32:42,355 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:32:42,356 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2019-01-14 14:32:42,363 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 2
+2019-01-14 14:32:50,186 [http-nio-9090-exec-3] com.demos.web.UserController:52-into addOrUpdate
+2019-01-14 14:32:50,272 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.insert:159-==>  Preparing: insert into t_user (id, name, password, age ) values (?, ?, ?,?) 
+2019-01-14 14:32:50,273 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.insert:159-==> Parameters: null, asdsa(String), asdsad(String), 66(Integer)
+2019-01-14 14:32:50,285 [http-nio-9090-exec-3] com.demos.mapper.UserMapper.insert:159-<==    Updates: 1
+2019-01-14 14:32:50,312 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2019-01-14 14:32:50,313 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:32:50,313 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:32:50,320 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:32:50,320 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:32:50,321 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:32:50,328 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:32:53,520 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2019-01-14 14:32:53,520 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:32:53,521 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:32:53,527 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:32:53,528 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:32:53,529 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2019-01-14 14:32:53,536 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 3
+2019-01-14 14:33:11,448 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.list:159-==>  Preparing: select id,name,code,valid from role where 1=1 limit ?,? 
+2019-01-14 14:33:11,449 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:33:11,458 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 14:33:11,458 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 1(Integer)
+2019-01-14 14:33:11,466 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 3
+2019-01-14 14:33:11,466 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====>  Preparing: select menu.*,rl.rid rlrid from menu,relation rl where rl.rid =? and menu.id = rl.mid 
+2019-01-14 14:33:11,467 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-====> Parameters: 2(Integer)
+2019-01-14 14:33:11,474 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.listMenu:159-<====      Total: 1
+2019-01-14 14:33:11,475 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.list:159-<==      Total: 2
+2019-01-14 14:43:36,822 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-01-14 14:43:55,857 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2019-01-14 14:44:00,789 [http-nio-9090-exec-6] com.demos.web.LoginController:60-login............
+2019-01-14 14:44:10,151 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2019-01-14 14:44:10,171 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2019-01-14 14:44:10,191 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2019-01-14 14:44:10,201 [http-nio-9090-exec-8] com.demos.web.UserController:28-into list
+2019-01-14 14:44:10,205 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:44:10,205 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:44:10,213 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:44:10,214 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:44:10,215 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:44:10,223 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:44:14,549 [http-nio-9090-exec-10] com.demos.web.UserController:28-into list
+2019-01-14 14:44:14,550 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:44:14,550 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:44:14,560 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:44:14,561 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:44:14,561 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2019-01-14 14:44:14,569 [http-nio-9090-exec-10] com.demos.mapper.UserMapper.list:159-<==      Total: 3
+2019-01-14 14:44:16,642 [http-nio-9090-exec-2] com.demos.web.UserController:28-into list
+2019-01-14 14:44:16,643 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:44:16,643 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:44:16,651 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:44:16,652 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:44:16,652 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:44:16,660 [http-nio-9090-exec-2] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:44:18,227 [http-nio-9090-exec-4] com.demos.web.UserController:28-into list
+2019-01-14 14:44:18,228 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:44:18,229 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:44:18,236 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:44:18,237 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:44:18,238 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-==> Parameters: 10(Integer), 10(Integer)
+2019-01-14 14:44:18,245 [http-nio-9090-exec-4] com.demos.mapper.UserMapper.list:159-<==      Total: 3
+2019-01-14 14:44:22,013 [http-nio-9090-exec-8] com.demos.web.UserController:28-into list
+2019-01-14 14:44:22,014 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:44:22,015 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:44:22,023 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:44:22,024 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:44:22,024 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:44:22,033 [http-nio-9090-exec-8] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:44:27,126 [http-nio-9090-exec-10] com.demos.mapper.RoleMapper.insertRole:159-==>  Preparing: insert into role(name, code, valid) values(?, ?, ?) 
+2019-01-14 14:44:27,126 [http-nio-9090-exec-10] com.demos.mapper.RoleMapper.insertRole:159-==> Parameters: test(String), test(String), 1(Integer)
+2019-01-14 14:44:27,143 [http-nio-9090-exec-10] com.demos.mapper.RoleMapper.insertRole:159-<==    Updates: 1
+2019-01-14 14:44:27,145 [http-nio-9090-exec-10] com.demos.mapper.RelationMapper.insert:159-==>  Preparing: insert into relation(rid,mid) values ( ?,? ) , ( ?,? ) , ( ?,? ) 
+2019-01-14 14:46:33,700 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-01-14 14:46:54,576 [http-nio-9090-exec-4] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2019-01-14 14:47:01,132 [http-nio-9090-exec-9] com.demos.web.LoginController:60-login............
+2019-01-14 14:47:01,471 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2019-01-14 14:47:01,512 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2019-01-14 14:47:01,540 [http-nio-9090-exec-9] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2019-01-14 14:47:01,550 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2019-01-14 14:47:01,554 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:47:01,555 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:47:01,565 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:47:01,566 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:47:01,567 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:47:01,579 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:47:15,542 [http-nio-9090-exec-1] com.demos.mapper.RoleMapper.insertRole:159-==>  Preparing: insert into role(name, code, valid) values(?, ?, ?) 
+2019-01-14 14:47:15,543 [http-nio-9090-exec-1] com.demos.mapper.RoleMapper.insertRole:159-==> Parameters: test(String), test(String), 1(Integer)
+2019-01-14 14:47:15,561 [http-nio-9090-exec-1] com.demos.mapper.RoleMapper.insertRole:159-<==    Updates: 1
+2019-01-14 14:47:15,563 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.insert:159-==>  Preparing: insert into relation(rid,mid) values ( ?,? ) , ( ?,? ) , ( ?,? ) 
+2019-01-14 14:47:15,564 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.insert:159-==> Parameters: 4(Integer), 1(Integer), 4(Integer), 2(Integer), 4(Integer), 3(Integer)
+2019-01-14 14:47:15,584 [http-nio-9090-exec-1] com.demos.mapper.RelationMapper.insert:159-<==    Updates: 3
+2019-01-14 14:50:15,790 [main] com.demos.Application:51-Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-01-14 14:50:31,342 [http-nio-9090-exec-3] com.demos.filter.LoginFilter:37-LoginFilter session timeout......
+2019-01-14 14:50:38,414 [http-nio-9090-exec-6] com.demos.web.LoginController:60-login............
+2019-01-14 14:50:38,715 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 and name = ? limit ?,? 
+2019-01-14 14:50:38,736 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-==> Parameters: aaa(String), 0(Integer), 1(Integer)
+2019-01-14 14:50:38,757 [http-nio-9090-exec-6] com.demos.mapper.UserMapper.list:159-<==      Total: 1
+2019-01-14 14:50:38,766 [http-nio-9090-exec-7] com.demos.web.UserController:28-into list
+2019-01-14 14:50:38,771 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:50:38,772 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:50:38,779 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:50:38,780 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:50:38,781 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:50:38,791 [http-nio-9090-exec-7] com.demos.mapper.UserMapper.list:159-<==      Total: 10
+2019-01-14 14:50:51,618 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.insertRole:159-==>  Preparing: insert into role(name, code, valid) values(?, ?, ?) 
+2019-01-14 14:50:51,619 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.insertRole:159-==> Parameters: test(String), test(String), 1(Integer)
+2019-01-14 14:50:51,636 [http-nio-9090-exec-8] com.demos.mapper.RoleMapper.insertRole:159-<==    Updates: 1
+2019-01-14 14:50:51,638 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.insert:159-==>  Preparing: insert into relation(rid,mid) values ( ?,? ) , ( ?,? ) , ( ?,? ) 
+2019-01-14 14:50:51,639 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.insert:159-==> Parameters: 5(Integer), 1(Integer), 5(Integer), 2(Integer), 5(Integer), 3(Integer)
+2019-01-14 14:50:51,655 [http-nio-9090-exec-8] com.demos.mapper.RelationMapper.insert:159-<==    Updates: 3
+2019-01-14 14:50:51,661 [http-nio-9090-exec-1] com.demos.web.UserController:28-into list
+2019-01-14 14:50:51,662 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-==>  Preparing: select count(id) from t_user where 1=1 
+2019-01-14 14:50:51,663 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-==> Parameters: 
+2019-01-14 14:50:51,669 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.count:159-<==      Total: 1
+2019-01-14 14:50:51,670 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==>  Preparing: select id, name, password, age from t_user where 1=1 limit ?,? 
+2019-01-14 14:50:51,670 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-==> Parameters: 0(Integer), 10(Integer)
+2019-01-14 14:50:51,679 [http-nio-9090-exec-1] com.demos.mapper.UserMapper.list:159-<==      Total: 10

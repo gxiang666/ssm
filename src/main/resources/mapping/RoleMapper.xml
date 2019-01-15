@@ -34,4 +34,8 @@
 		values(#{name}, #{code}, #{valid})
 	</insert>
 
+
+	<delete id="delete" parameterType="int">
+		delete from role where id =#{id}
+	</delete>
 </mapper>

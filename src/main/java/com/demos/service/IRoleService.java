@@ -10,4 +10,6 @@ public interface IRoleService {
 
 	void saveRole(Role role, List<Integer> menuIdList);
 
+	void delete(Integer id);
+
 }
